@@ -16,7 +16,7 @@ def print_none():
     print("I got nothin'.")
 
 
-print_two("Zed", "Shaw")
-print_two_again("Zed", "Shaw")
+print_two("Xin", "Zou")
+print_two_again("Daniel", "Zou")
 print_one("Frist!")
 print_none()
