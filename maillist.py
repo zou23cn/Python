@@ -1,5 +1,7 @@
 import os
 import time
+import numpy as np
+
 path=r'd:\maillist.txt'
 out_file = open(r"d:\sendlist.txt", 'w')
 f1=open(path,'r')
