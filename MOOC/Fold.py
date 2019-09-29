@@ -1,10 +1,10 @@
-#绘制六边形
+#绘制叠边形
 import turtle
 turtle.penup()
-turtle.goto(-100,-200)
+turtle.goto(-100,-100)
 turtle.pendown()
 turtle.pensize(5)
-for i in range(6):
+for i in range(9):
     turtle.fd(200)
-    turtle.left(60)
+    turtle.left(80)
 turtle.done()
