@@ -8,6 +8,9 @@ import turtle
 # for i in range(3):
 #     turtle.right(120)
 #     turtle.fd(200)
+turtle.penup()
+turtle.goto(-100,-100)
+turtle.pendown()
 r = 0
 for i in range(3):
     turtle.seth(r)
