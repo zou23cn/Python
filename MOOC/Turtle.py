@@ -1,61 +1,21 @@
-from turtle import *
+import turtle
 
-# 设置色彩模式是RGB:
-colormode(255)
+import time
 
-lt(90)
+turtle.pensize(2)
 
-lv = 14
-l = 120
-s = 45
+turtle.bgcolor("black")
 
-width(lv)
+colors = ["red","yellow","purple","blue"]#设置四种颜色，你可以自己修改
 
-# 初始化RGB颜色:
-r = 0
-g = 0
-b = 0
-pencolor(r, g, b)
+#turtle.tracer(False)
 
-penup()
-bk(l)
-pendown()
-fd(l)
+for x in range(400):
 
-def draw_tree(l, level):
-    global r, g, b
-    # save the current pen width
-    w = width()
+   turtle.forward(2*x)#每次画的长度是变量x的2倍
 
-    # narrow the pen width
-    width(w * 3.0 / 4.0)
-    # set color:
-    r = r + 1
-    g = g + 2
-    b = b + 3
-    pencolor(r % 200, g % 200, b % 200)
+   turtle.color(colors[x % 4])#改变颜色
 
-    l = 3.0 / 4.0 * l
+   turtle.left(91)#逆时针旋转91度形成交叉螺旋
 
-    lt(s)
-    fd(l)
-
-    if level < lv:
-        draw_tree(l, level + 1)
-    bk(l)
-    rt(2 * s)
-    fd(l)
-
-    if level < lv:
-        draw_tree(l, level + 1)
-    bk(l)
-    lt(s)
-
-    # restore the previous pen width
-    width(w)
-
-speed("fastest")
-
-draw_tree(l, 4)
-
-done()
+turtle.done()
