@@ -7,7 +7,7 @@ def main(language_file, encoding, errors):
 
     if line:
         print_line(line, encoding, errors)
-        return main(language_flie, encoding, errors)
+        return main(language_file, encoding, errors)
 
 
 def print_line(line, encoding, errors):
@@ -18,6 +18,6 @@ def print_line(line, encoding, errors):
     print(raw_bytes, "<==>", cooked_string)
 
 
-language = open("languages.txt", encoding = "utf-8")
+languages = open("languages.txt", encoding = "utf-8")
 
-main(language, encoding, error)
+main(languages, encoding, error)
