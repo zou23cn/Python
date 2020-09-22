@@ -7,7 +7,7 @@ def main(language_file, encoding, errors):
 
     if line:
         print_line(line, encoding, errors)
-        return main(language_flie, encoding, errors)
+        return main(language_file, encoding, errors)
 
 
 def print_line(line, encoding, errors):
