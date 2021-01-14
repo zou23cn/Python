@@ -18,8 +18,9 @@ def print_line(line, encoding, errors):
     print(raw_bytes, "<==>", cooked_string)
 
 
-language = open("languages.txt", encoding = "utf-8")
+languages = open("languages.txt", encoding = "utf-8")
 
+<<<<<<< HEAD
 main(language, encoding, error)
 
 
@@ -28,3 +29,6 @@ main(language, encoding, error)
 	所以如果readling()返回包含东西，则继续执行下面2行，如果返回为null，则不执行，这是为了防止死循环；
 '''
 
+=======
+main(languages, encoding, error)
+>>>>>>> c53e66c87913cce5136f1abe2547099893281398
